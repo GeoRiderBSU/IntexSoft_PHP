@@ -19,6 +19,7 @@ else
     $chet3=$chet2/$chet1 //среднее четных
     ?>
 <!--Таблица результатов-->
+<h1 align="center">Задание 8 "Поиск чисел в интервале -39 - 102 с шагом 9"</h1>
 <div class="container">
     <table class="table table-bordered">
         <thead>
