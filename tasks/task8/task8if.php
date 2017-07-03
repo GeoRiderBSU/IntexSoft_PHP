@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <title>Task 8 IF</title>
     <!--стили оформления таблицы-->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" >
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" >
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" >
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.css" >
 </head>
 <body>
 <?php

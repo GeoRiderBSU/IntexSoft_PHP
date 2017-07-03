@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Task 8 Primes</title>
     <!--Стили таблицы-->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" >
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" >
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" >
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.css" >
 </head>
 <body>
 <?php

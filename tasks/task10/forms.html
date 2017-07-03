@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 10 Условные операторы</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" >
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css" >
+</head>
+<body>
+     <form role="form"  class="form-horizontal" method="post" enctype="multipart/form-data" action="t10_1.php">
+        <div class="form-group">
+            <label for="month" class="control-label col-lg-2 col-sm-2">Месяц:</label>
+            <div class="col-sm-2">
+            <select name="month" id="month" class="form-control col-lg-2 col-sm-2">
+                        <option>Выберите месяц</option>
+                        <option value="1">Январь</option>
+                        <option value="Февраль">Февраль</option>
+                        <option value="Март">Март</option>
+                        <option value="Апрель">Апрель</option>
+                        <option value="Март">Март</option>
+                        <option value="Май">Май</option>
+                        <option value="Июнь">Июнь</option>
+                        <option value="Июль">Июль</option>
+                        <option value="Август">Август</option>
+                        <option value="Сентябрь">Сентябрь</option>
+                        <option value="Октябрь">Октябрь</option>
+                        <option value="Ноябрь">Ноябрь</option>
+                        <option value="Декабрь">Декабрь</option>
+                    </select>
+            </div>
+            </div>
+         <div class="form-group">
+             <label for="days" class="control-label col-lg-2 col-sm-2">Дней в месяце:</label>
+             <div class="col-lg-2 col-sm-2">
+                 <input class="form-control" type="text" name id="days" readonly>
+             </div>
+         </div>
+        <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-6 col-sm-offset-2 col-sm-6">
+                <button type="submit" class="btn btn-success">Проверить</button>
+            </div>
+        </div>
+    </form>
+     <?php
+$month=$_POST['month'];
+echo "Дней в месяце "; mouth($month);
+function mouth ($month)
+{
+    if (($month=="Январь") or ($month=="Март") or ($month=="Май") or ($month=="Июль") or ($month=="Август") or ($month=="Октябрь") or ($month=="Декабрь")) echo "31";
+else
+    if (($month=="Апрель") or ($month=="Июнь") or ($month=="Сентябрь") or ($month=="Ноябрь")) echo "30";
+    else
+        if ($month=="Февраль") echo "28";
+    else ($month==null); echo "ошибка запроса";
+
+}
+?>
+</body>
+</html>
